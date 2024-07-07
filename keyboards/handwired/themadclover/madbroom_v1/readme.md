@@ -1,6 +1,6 @@
 # MadBroom V1
 
-![MadBroom V1](/keyboards/handwired/themadclover/madbroom/images/madBroomV1_1.jpg)
+![MadBroom V1](/keyboards/handwired/themadclover/madbroom_v1/images/madBroomV1_1.jpg)
 
 A handwired keyboard designed drawing inspiration from the Ferris, designed by [Pierre Chavalier](https://github.com/pierrechevalier83/ferris).  Case design done by myself (ametuer hour here boys and girls...but I learned a lot).  Designed to use the RP2040 Zero, and direct wired (diodeless), this was a project that stretched my abilities in both CAD, and working with QMK and Vial.
 
