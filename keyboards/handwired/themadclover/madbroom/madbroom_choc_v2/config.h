@@ -14,4 +14,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #define EE_HANDS
-#define COMBO_ONLY_FROM_LAYER 1
+#define COMBO_ONLY_FROM_LAYER 0
+#define ENCODERS_PAD_A { GP15 }
+#define ENCODERS_PAD_B { GP26 }
+#define ENCODERS_PAD_A_RIGHT { GP7 }
+#define ENCODERS_PAD_B_RIGHT { GP8 }
