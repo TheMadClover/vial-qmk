@@ -3,7 +3,7 @@
 
 #pragma once
 
-#define VIAL_KEYBOARD_UID {0xAC, 0xEE, 0x30, 0x37, 0xEB, 0x70, 0x6A, 0xE3}
+#define VIAL_KEYBOARD_UID {0xD5, 0x22, 0x2A, 0x25, 0x7C, 0x29, 0x27, 0x1A}
 #define DYNAMIC_KEYMAP_LAYER_COUNT 8
 #define VIAL_UNLOCK_COMBO_ROWS { 0, 0 }
-#define VIAL_UNLOCK_COMBO_COLS { 0, 4 }
+#define VIAL_UNLOCK_COMBO_COLS { 0, 1 }
