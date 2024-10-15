@@ -7,8 +7,8 @@
     "bootloader": "rp2040",
     "diode_direction": "COL2ROW",
     "matrix_pins": {
-        "cols": ["GP5", "GP6", "GP7", "GP8", "GP14"],
-        "rows": ["GP1", "GP2", "GP4", "GP3"]
+        "cols": ["GP28", "GP27", "GP26", "GP15", "GP14"],
+        "rows": ["GP8", "GP7", "GP6", "GP5"]
     },
     "usb": {
         "device_version": "1.0.0",
@@ -31,8 +31,8 @@
         "soft_serial_pin": "GP11",
         "matrix_pins": {
             "right": {
-                "cols": ["GP5", "GP6", "GP14", "GP15", "GP26"],
-                "rows": ["GP1", "GP2", "GP3", "GP4"]
+                "cols": ["GP28", "GP27", "GP26", "GP15", "GP14"],
+                "rows": ["GP8", "GP7", "GP6", "GP5"]
             }
         },
         "bootmagic": {
