@@ -9,6 +9,7 @@
         "device_version": "0.0.1"
     },
     "features": {
+        "encoder": true,
         "bootmagic": true,
         "mousekey": true,
         "extrakey": true,
@@ -19,6 +20,12 @@
         "magic": false,
         "music": false,
         "space_cadet": false
+    },
+
+    "encoder": {
+        "rotary": [
+            { "pin_a": "GP1", "pin_b": "GP0", "resolution": 2}
+        ]
     },
 
     "bootmagic": {
