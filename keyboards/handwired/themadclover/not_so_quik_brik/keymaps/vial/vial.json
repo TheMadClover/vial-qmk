@@ -1,0 +1,102 @@
+{
+    "name": "NotSoQuikBrik",
+    "lighting": "none",
+    "matrix": {
+        "rows": 8,
+        "cols": 5
+    },
+    "customKeycodes": [
+        {
+            "name": "OS_SHFT",
+            "title": "One-shot Shift",
+            "shortName": "OS_S"
+        },
+        {
+            "name": "OS_CTRL",
+            "title": "One-shot Control",
+            "shortName": "OS_C"
+        },
+        {
+            "name": "OS_ALT",
+            "title": "One-shot Alt",
+            "shortName": "OS_A"
+        },
+        {
+            "name": "OS_CMD",
+            "title": "One-shot Cmd",
+            "shortName": "OS_G"
+        },
+        {
+            "name": "SW_WIN",
+            "title": "Switch to next window.",
+            "shortName": "SW_W"
+        },
+        {
+            "name": "SW_LANG",
+            "title": "Switch to next input language.",
+            "shortName": "SW_L"
+        }
+    ],
+    "layouts": {
+        "keymap":[
+            [
+              "0,0",
+              "0,1",
+              "0,2",
+              "0,3",
+              "0,4",
+              {
+                "x": 4
+              },
+              "4,0",
+              "4,1",
+              "4,2",
+              "4,3",
+              "4,4"
+            ],
+            [
+              "1,0",
+              "1,1",
+              "1,2",
+              "1,3",
+              "1,4",
+              {
+                "x": 4
+              },
+              "5,0",
+              "5,1",
+              "5,2",
+              "5,3",
+              "5,4"
+            ],
+            [
+              "2,0",
+              "2,1",
+              "2,2",
+              "2,3",
+              "2,4",
+              {
+                "x": 4
+              },
+              "6,0",
+              "6,1",
+              "6,2",
+              "6,3",
+              "6,4"
+            ],
+            [
+              {
+                "y": 0.25,
+                "x": 4
+              },
+              "3,3",
+              "3,4",
+              {
+                "x": 2
+              },
+              "7,0",
+              "7,1"
+            ]
+          ]
+    }
+}
