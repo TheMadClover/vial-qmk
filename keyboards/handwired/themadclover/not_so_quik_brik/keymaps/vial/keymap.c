@@ -13,7 +13,7 @@
 #define SPACE_R A(G(KC_RGHT))
 #define LA_SYM MO(SYM)
 #define LA_NAV MO(NAV)
-#define LA_QTY DF(QTY)
+#define LA_COL DF(COL)
 #define LA_DEF DF(DEF)
 
 /*
@@ -37,7 +37,7 @@ combo_t key_combos[] = {
 
 enum layers {
     DEF,
-    QTY,
+    COL,
     SYM,
     NAV,
     NUM,
@@ -56,16 +56,16 @@ enum keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [DEF] = LAYOUT_split_3x5_2(
-        KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT,
-        KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_H,    KC_N,    KC_E,    KC_I,    KC_O,
-        KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SCLN,
-                                   LA_NAV,  KC_SPC,  KC_LSFT, LA_SYM
-    ),
-
-    [QTY] = LAYOUT_split_3x5_2(
         KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_QUOT,
         KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_P,
         KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SCLN,
+                                   LA_NAV,  KC_SPC,  KC_LSFT, LA_SYM
+    ),
+
+    [COL] = LAYOUT_split_3x5_2(
+        KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT,
+        KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_H,    KC_N,    KC_E,    KC_I,    KC_O,
+        KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SCLN,
                                    LA_NAV,  KC_SPC,  KC_LSFT, LA_SYM
     ),
 
