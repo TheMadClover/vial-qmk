@@ -27,6 +27,16 @@
             "shortName": "OS_G"
         },
         {
+            "name": "SPACE_L",
+            "title": "Select Word Left.",
+            "shortName": "SEL_L"
+        },
+        {
+            "name": "SPACE_R",
+            "title": "Select Word Right.",
+            "shortName": "SEL_R"
+        },
+        {
             "name": "SW_WIN",
             "title": "Switch to next window.",
             "shortName": "SW_W"
