@@ -3,12 +3,12 @@
 #include "oneshot.h"
 #include "swapper.h"
 
-#define HOME G(KC_LEFT)
-#define END G(KC_RGHT)
-#define FWD G(KC_RBRC)
-#define BACK G(KC_LBRC)
-#define TAB_L G(S(KC_LBRC))
-#define TAB_R G(S(KC_RBRC))
+#define HOME KC_HOME
+#define END KC_END
+#define FWD A(KC_RGHT)
+#define BACK A(KC_LEFT)
+#define TAB_L C(S(KC_TAB))
+#define TAB_R C(KC_TAB)
 #define SEL_L C(S(KC_LEFT))
 #define SEL_R C(S(KC_RGHT))
 #define LA_SYM MO(SYM)
