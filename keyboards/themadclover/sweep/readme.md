@@ -48,3 +48,5 @@ If you printed one of the PCB variant with swapped letters `Q` and `B` / `P` and
 ## Mad Clover Firmware
 
 The firmware in this, my personal fork of Vial QMK, is a variation on the work of Callum Oakley.  It makes use of Callum's timerless one-shot mods, and the bulk of the keymap/code matches that found in his [QMK fork and Userspace](https://github.com/callum-oakley/qmk_firmware/tree/master/users/callum).
+
+I have converted this firmware to use the RP2040 Pro Micro, in place of the standard Pro Micro.
