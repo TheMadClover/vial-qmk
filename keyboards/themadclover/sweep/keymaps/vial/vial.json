@@ -17,6 +17,48 @@
     "rows": 8,
     "cols": 5
   },
+  "customKeycodes": [
+      {
+          "name": "OS_SHFT",
+          "title": "One-shot Shift",
+          "shortName": "OS_S"
+      },
+      {
+          "name": "OS_CTRL",
+          "title": "One-shot Control",
+          "shortName": "OS_C"
+      },
+      {
+          "name": "OS_ALT",
+          "title": "One-shot Alt",
+          "shortName": "OS_A"
+      },
+      {
+          "name": "OS_CMD",
+          "title": "One-shot Cmd",
+          "shortName": "OS_G"
+      },
+      {
+          "name": "SPACE_L",
+          "title": "Select Word Left.",
+          "shortName": "SEL_L"
+      },
+      {
+          "name": "SPACE_R",
+          "title": "Select Word Right.",
+          "shortName": "SEL_R"
+      },
+      {
+          "name": "SW_WIN",
+          "title": "Switch to next window.",
+          "shortName": "SW_W"
+      },
+      {
+          "name": "SW_LANG",
+          "title": "Switch to next input language.",
+          "shortName": "SW_L"
+      }
+  ],
   "layouts": {
     "keymap": [
       [

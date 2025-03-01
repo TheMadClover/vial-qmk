@@ -6,7 +6,8 @@
         "pid": "0x3939",
         "device_version": "0.0.1"
     },
-    "development_board": "promicro",
+    "processor": "RP2040",
+    "bootloader": "rp2040",
     "features": {
         "bootmagic": true,
         "extrakey": true,
@@ -15,29 +16,30 @@
     },
     "matrix_pins": {
         "direct": [
-            ["E6", "F7", "F6", "F5", "F4"],
-            ["B1", "B3", "B2", "B6", "D3"],
-            ["D1", "D0", "D4", "C6", "D7"],
-            ["B4", "B5", null, null, null]
+            ["GP7", "GP26", "GP27", "GP28", "GP29"],
+            ["GP22", "GP20", "GP23", "GP21", "GP0"],
+            ["GP2", "GP3", "GP4", "GP5", "GP6"],
+            ["GP8", "GP9", null, null, null]
         ]
+    },
+    "bootmagic": {
+        "matrix": [0,0]
     },
     "split": {
         "enabled": true,
-        "bootmagic": {
-            "matrix": [4, 4]
-        },
+        "soft_serial_pin": "GP1",        
         "matrix_pins": {
             "right": {
                 "direct": [
-                    ["F4", "F5", "F6", "F7", "E6"],
-                    ["D3", "B6", "B2", "B3", "B1"],
-                    ["D7", "C6", "D4", "D0", "D1"],
-                    ["B5", "B4", null, null, null]
+                    ["GP29", "GP28", "GP27", "GP26", "GP7"],
+                    ["GP0", "GP21", "GP23", "GP20", "GP22"],
+                    ["GP6", "GP5", "GP4", "GP3", "GP2"],
+                    ["GP9", "GP8", null, null, null]
                 ]
             }
         },
-        "serial": {
-            "pin": "D2"
+        "bootmagic": {
+            "matrix": [4,0]
         }
     },
     "community_layouts": ["split_3x5_2"],
