@@ -6,17 +6,18 @@
 #include "oneshot.h"
 #include "swapper.h"
 
-#define HOME G(KC_LEFT)
-#define END G(KC_RGHT)
-#define FWD G(KC_RBRC)
-#define BACK G(KC_LBRC)
-#define TAB_L G(S(KC_LBRC))
-#define TAB_R G(S(KC_RBRC))
-#define SPACE_L A(G(KC_LEFT))
-#define SPACE_R A(G(KC_RGHT))
+#define HOME KC_HOME
+#define END KC_END
+#define FWD A(KC_RGHT)
+#define BACK A(KC_LEFT)
+#define TAB_L C(S(KC_TAB))
+#define TAB_R C(KC_TAB)
+#define SEL_L C(S(KC_LEFT))
+#define SEL_R C(S(KC_RGHT))
 #define LA_SYM MO(SYM)
 #define LA_NAV MO(NAV)
 #define LA_DEF DF(DEF)
+#define EPIC C(KC_SPC)
 
 enum layers {
     DEF,
@@ -31,9 +32,8 @@ enum keycodes {
     OS_CTRL,
     OS_ALT,
     OS_CMD,
-
     SW_WIN,  // Switch to next window         (cmd-tab)
-    SW_LANG, // Epic Chart Search             (ctl-spc)
+    //SW_EPIC,  Epic Chart Search             (ctl-spc)
 };
 
 
@@ -66,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [NAV] = LAYOUT_unibroom(
         KC_TAB,  SW_WIN,  TAB_L,   TAB_R,   KC_VOLU, QK_RBT,  HOME,    KC_UP,   END,     KC_DEL,
         OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  KC_VOLD, KC_CAPS, KC_LEFT, KC_DOWN, KC_RGHT, KC_BSPC,
-        SPACE_L, SPACE_R, BACK,    FWD,     KC_MPLY, XXXXXXX, KC_PGDN, KC_PGUP, SW_LANG, KC_ENT,
+        SEL_L,   SEL_R,   BACK,    FWD,     KC_MPLY, XXXXXXX, KC_PGDN, KC_PGUP, EPIC, KC_ENT,
                                    _______, _______, _______, _______
     ),
 
@@ -92,7 +92,6 @@ bool is_oneshot_ignored_key(uint16_t keycode) {
     switch (keycode) {
     case LA_SYM:
     case LA_NAV:
-    case KC_LSFT:
     case OS_SHFT:
     case OS_CTRL:
     case OS_ALT:
@@ -104,7 +103,7 @@ bool is_oneshot_ignored_key(uint16_t keycode) {
 }
 
 bool sw_win_active = false;
-bool sw_lang_active = false;
+/*bool sw_lang_active = false;*/
 
 oneshot_state os_shft_state = os_up_unqueued;
 oneshot_state os_ctrl_state = os_up_unqueued;
@@ -113,13 +112,15 @@ oneshot_state os_cmd_state = os_up_unqueued;
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     update_swapper(
-        &sw_win_active, KC_LGUI, KC_TAB, SW_WIN,
+        &sw_win_active, KC_LALT, KC_TAB, SW_WIN,
         keycode, record
     );
+    /*
     update_swapper(
         &sw_lang_active, KC_LCTL, KC_SPC, SW_LANG,
         keycode, record
     );
+    */
 
     update_oneshot(
         &os_shft_state, KC_LSFT, OS_SHFT,
