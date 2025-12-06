@@ -81,8 +81,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [NUMP] = LAYOUT_unibroom(
         KC_TAB,  HOME,    KC_UP,   END,     KC_NUM,  KC_PMNS, KC_P7,   KC_P8,   KC_P9,   KC_PSLS,
         XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, KC_PPLS, KC_P4,   KC_P5,   KC_P6,   KC_PAST,
-        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, TG(4),   XXXXXXX, KC_P1,   KC_P2,   KC_P3,   KC_PENT,
-                                   KC_BSPC, _______, KC_PDOT, KC_P0
+        XXXXXXX, KC_DEL,  XXXXXXX, KC_BSPC, TG(4),   XXXXXXX, KC_P1,   KC_P2,   KC_P3,   KC_PENT,
+                                   _______, _______, KC_PDOT, KC_P0
     ),
 };
 
