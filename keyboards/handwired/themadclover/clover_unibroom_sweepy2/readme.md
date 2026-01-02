@@ -1,6 +1,6 @@
 # Unibroom Sweepy2
 
-![Unibroom Sweepy2](vial-qmk/keyboards/handwired/themadclover/clover_unibroom_sweepy2/images/image_1.jpg)
+![Unibroom Sweepy2](/keyboards/handwired/themadclover/clover_unibroom_sweepy2/images/image_1.jpg)
 
 *A Vial enabled handwired mechanical keyboard.*
 
