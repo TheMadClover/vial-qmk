@@ -1,12 +1,13 @@
-# clover_unibroom
+# Unibroom Sweepy2
 
-![clover_unibroom](imgur.com image replace me!)
+![Unibroom Sweepy2](https://imgur.com/vREgQ3n)
+![Imgur](https://imgur.com/vREgQ3n)
 
-*A short description of the keyboard/project*
+*A Vial enabled handwired mechanical keyboard.*
 
 * Keyboard Maintainer: [TheMadClover](https://github.com/TheMadClover)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+* Hardware Supported: *RP2040 Zero Supermini*
+* Hardware Availability: *[RP2040 Zero Supermini-Aliexpress](https://share.google/7UdnPk3eajyDnip1M)*
 
 Make example for this keyboard (after setting up your build environment):
 
