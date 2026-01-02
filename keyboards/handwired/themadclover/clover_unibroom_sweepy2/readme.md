@@ -1,7 +1,6 @@
 # Unibroom Sweepy2
 
-![Unibroom Sweepy2](https://imgur.com/vREgQ3n)
-![Imgur](https://imgur.com/vREgQ3n)
+![Unibroom Sweepy2](/keyboards/handwired/themadclover/clover_unibroom_sweepy2/images/image_1.jpg)
 
 *A Vial enabled handwired mechanical keyboard.*
 
@@ -9,13 +8,9 @@
 * Hardware Supported: *RP2040 Zero Supermini*
 * Hardware Availability: *[RP2040 Zero Supermini-Aliexpress](https://share.google/7UdnPk3eajyDnip1M)*
 
-Make example for this keyboard (after setting up your build environment):
+Compile example for this keyboard (after setting up your build environment):
 
-    make clover_unibroom:default
-
-Flashing example for this keyboard:
-
-    make clover_unibroom:default:flash
+    qmk compile -kb handwired/themadclover/clover_unibroom/sweepy2 -km vial
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
@@ -23,6 +18,8 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 Enter the bootloader in 3 ways:
 
-* **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard
-* **Physical reset button**: Briefly press the button on the back of the PCB - some may have pads you must short instead
-* **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available
+* **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard.
+
+* **Boot key on controller**:  Hold down the "**BOOT**" button on the controller and plug in the keyboard.
+
+* **Keycode in layout**: Use vial web UI to add bootloader key to key on the keymap, then depress that key.  This is handy if you don't want to disassemble the board to access the "**BOOT**" button on the microcontroller. 
