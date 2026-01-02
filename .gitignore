@@ -82,7 +82,7 @@ tags
 *.bmp
 *.wbmp
 *.gif
-*.jpg
+#*.jpg
 *.jpeg
 *.png
 *.apng
