@@ -23,3 +23,7 @@ Enter the bootloader in 3 ways:
 * **Boot key on controller**:  Hold down the "**BOOT**" button on the controller and plug in the keyboard.
 
 * **Keycode in layout**: Use vial web UI to add bootloader key to key on the keymap, then depress that key.  This is handy if you don't want to disassemble the board to access the "**BOOT**" button on the microcontroller. 
+
+## Mad Clover Firmware
+
+The firmware in this, my personal fork of Vial QMK, is a variation on the work of Callum Oakley.  It makes use of Callum's timerless one-shot mods, and the bulk of the keymap/code matches that found in his [QMK fork and Userspace](https://github.com/callum-oakley/qmk_firmware/tree/master/users/callum).
