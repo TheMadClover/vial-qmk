@@ -21,7 +21,7 @@ Enter the bootloader in 3 ways:
 
 * **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard.
 
-* **Boot key on controller**:  Hold down the "**BOOT**" button on the controller and plug in the keyboard.
+* **Boot button on controller**:  Hold down the "**BOOT**" button on the controller and plug in the keyboard.
 
 * **Keycode in layout**: Use vial web UI to add bootloader key to key on the keymap, then depress that key.  This is handy if you don't want to disassemble the board to access the "**BOOT**" button on the microcontroller. 
 
