@@ -1,6 +1,8 @@
 # Unibroom Sweepy2
 
 ![Unibroom Sweepy2](/keyboards/handwired/themadclover/clover_unibroom_sweepy2/images/image_1.jpg)
+![Sweepy2 OSM Keymap](/keyboards/handwired/themadclover/clover_unibroom_sweepy2/images/my_keymap.png)
+*Keymap*
 
 *A Vial enabled handwired mechanical keyboard.*
 
