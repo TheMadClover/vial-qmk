@@ -25,6 +25,31 @@
             "name": "Eye Val",
             "title": "Cycle eye brightness",
             "shortName": "EY_VAL"
+        },
+        {
+            "name": "OS_SHFT",
+            "title": "One-shot Shift",
+            "shortName": "OS_S"
+        },
+        {
+            "name": "OS_CTRL",
+            "title": "One-shot Control",
+            "shortName": "OS_C"
+        },
+        {
+            "name": "OS_ALT",
+            "title": "One-shot Alt",
+            "shortName": "OS_A"
+        },
+        {
+            "name": "OS_CMD",
+            "title": "One-shot Cmd",
+            "shortName": "OS_G"
+        },
+        {
+            "name": "SW_WIN",
+            "title": "Switch to next window.",
+            "shortName": "SW_W"
         }
     ],
     "layouts": {

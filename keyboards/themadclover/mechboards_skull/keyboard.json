@@ -54,8 +54,24 @@
         },
         {
             "key": "EY_VAL"
+        },
+        {
+            "key": "OS_SHFT"
+        },
+        {
+            "key": "OS_CTRL"
+        },
+        {
+            "key": "OS_ALT"
+        },
+        {
+            "key": "OS_CMD"
+        },
+        {
+            "key": "SW_WIN"
         }
     ],
+
     "layouts": {
         "LAYOUT_split_3x5_2": {
             "layout": [
