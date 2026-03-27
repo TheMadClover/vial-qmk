@@ -3,7 +3,7 @@
 
 #pragma once
 
-#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+//#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 #define WS2812_PIO_USE_PIO1 // Force the usage of PIO1 peripheral, by default the WS2812 implementation uses the PIO0 peripheral
 #define WS2812_BYTE_ORDER WS2812_BYTE_ORDER_RGB
 
@@ -23,4 +23,4 @@
 #define RGBLIGHT_DEFAULT_HUE 128 // Sets the default hue value, if none has been set
 #define RGBLIGHT_DEFAULT_SAT 128 // Sets the default saturation value, if none has been set
 #define RGBLIGHT_DEFAULT_VAL 32 // Sets the default brightness value, if none has been set
-                                
+
