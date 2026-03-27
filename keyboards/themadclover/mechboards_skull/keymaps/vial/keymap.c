@@ -200,6 +200,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     return true;
 };
 
+layer_state_t layer_state_set_user(layer_state_t state) {
+  return update_tri_layer_state(state, SYM, NAV, NUM);
+}
+
 void user_sync_eyehsv_handler(uint8_t in_buflen, const void* in_data, uint8_t out_buflen, void* out_data) {
     const eyergb_config_t *m2s = (const eyergb_config_t*)in_data;
 
