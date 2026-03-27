@@ -40,7 +40,7 @@
         "force_nkro": false
     },
     "layouts": {
-        "LAYOUT_split_3x5_3": {
+        "LAYOUT_cheepy": {
             "layout": [
                 { "matrix": [4, 10], "x": 0, "y": 0.25 },
                 { "matrix": [4, 9], "x": 1, "y": 0.125 },
