@@ -14,17 +14,10 @@
 #define TAB_R C(KC_TAB)
 #define SEL_L C(S(KC_LEFT))
 #define SEL_R C(S(KC_RGHT))
-#define LA_SYM MO(SYM)
-#define LA_NAV MO(NAV)
-#define LA_DEF DF(DEF)
+#define LA_SYM MO(1)
+#define LA_NAV MO(2)
+#define LA_DEF DF(0)
 #define EPIC C(KC_SPC)
-
-enum layers {
-    DEF,
-    SYM,
-    NAV,
-    NUM,
-};
 
 enum keycodes {
     // Custom oneshot mod implementation with no timers.
@@ -49,28 +42,28 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * │   │   │   │NAV│SPC│SFT│SYM│   │   │   │
      * └───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘
      */
-    [DEF] = LAYOUT_cheepy(
+    [0] = LAYOUT_cheepy(
         KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_QUOT,
         KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_P,
         KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SCLN,
-                          _______, LA_NAV,  KC_SPC,  KC_LSFT, LA_SYM   _______
+                          _______, LA_NAV,  KC_SPC,  KC_LSFT, LA_SYM,  _______
     ),
 
-    [SYM] = LAYOUT_cheepy(
+    [1] = LAYOUT_cheepy(
         KC_ESC,  KC_LBRC, KC_LCBR, KC_LPRN, KC_TILD, KC_CIRC, KC_RPRN, KC_RCBR, KC_RBRC, KC_GRV,
         KC_MINS, KC_ASTR, KC_EQL,  KC_UNDS, KC_DLR,  KC_HASH, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT,
         KC_PLUS, KC_PIPE, KC_AT,   KC_SLSH, KC_PERC, XXXXXXX, KC_BSLS, KC_AMPR, KC_QUES, KC_EXLM,
                           _______, _______, _______, _______, _______, _______
     ),
 
-    [NAV] = LAYOUT_cheepy(
+    [2] = LAYOUT_cheepy(
         KC_TAB,  SW_WIN,  TAB_L,   TAB_R,   KC_VOLU, KC_PSCR, HOME,    KC_UP,   END,     KC_DEL,
         OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  KC_VOLD, KC_CAPS, KC_LEFT, KC_DOWN, KC_RGHT, KC_BSPC,
         SEL_L,   SEL_R,   BACK,    FWD,     KC_MPLY, TG(4),   KC_PGDN, KC_PGUP, EPIC, KC_ENT,
                           _______, _______, _______, _______, _______, _______
     ),
 
-    [NUM] = LAYOUT_cheepy(
+    [3] = LAYOUT_cheepy(
         KC_7,    KC_5,    KC_3,    KC_1,    KC_9,    KC_8,    KC_0,    KC_2,    KC_4,    KC_6,
         OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  KC_F11,  KC_F10,  OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT,
         KC_F7,   KC_F5,   KC_F3,   KC_F1,   KC_F9,   KC_F8,   KC_F12,  KC_F2,   KC_F4,   KC_F6,
@@ -79,10 +72,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
-    [DEF] =   { ENCODER_CCW_CW(KC_MS_WH_UP, KC_MS_WH_DOWN)},
-    [SYM] =   { ENCODER_CCW_CW(RGB_HUD, RGB_HUI)  },
-    [NAV] =   { ENCODER_CCW_CW(RGB_VAD, RGB_VAI)  },
-    [NUM] =   { ENCODER_CCW_CW(RGB_RMOD, RGB_MOD) },
+    [0] =   { ENCODER_CCW_CW(KC_MS_WH_UP, KC_MS_WH_DOWN)},
+    [1] =   { ENCODER_CCW_CW(RGB_HUD, RGB_HUI)  },
+    [2] =   { ENCODER_CCW_CW(RGB_VAD, RGB_VAI)  },
+    [3] =   { ENCODER_CCW_CW(RGB_RMOD, RGB_MOD) },
+    [4] =   { ENCODER_CCW_CW(KC_NO,KC_NO)  },
+    [5] =   { ENCODER_CCW_CW(KC_NO,KC_NO)  },
+    [6] =   { ENCODER_CCW_CW(KC_NO,KC_NO)  },
+    [7] =   { ENCODER_CCW_CW(KC_NO,KC_NO)  }
     //                  Encoder 1                                     Encoder 2
 };
 
@@ -151,5 +148,5 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 layer_state_t layer_state_set_user(layer_state_t state) {
-    return update_tri_layer_state(state, SYM, NAV, NUM);
+    return update_tri_layer_state(state, 1, 2, 3);
 }
