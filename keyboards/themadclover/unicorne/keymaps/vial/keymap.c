@@ -2,6 +2,7 @@
 
 #include "oneshot.h"
 #include "swapper.h"
+#include "layers.h"
 
 #define HOME KC_HOME
 #define END KC_END
@@ -16,12 +17,14 @@
 #define LA_DEF DF(DEF)
 #define EPIC C(KC_SPC)
 
+/*
 enum layers {
     DEF,
     SYM,
     NAV,
     NUM,
 };
+*/
 
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
