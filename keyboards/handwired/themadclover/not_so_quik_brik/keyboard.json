@@ -1,7 +1,6 @@
 {
     "manufacturer": "themadclover",
     "keyboard_name": "NotSoQuikBrik",
-    "url": "",
     "maintainer": "themadclover",
     "processor": "RP2040",
     "bootloader": "rp2040",

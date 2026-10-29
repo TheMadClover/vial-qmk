@@ -1,7 +1,6 @@
 {
     "manufacturer": "TheMadClover",
     "keyboard_name": "Madbroom_Choc_v1",
-    "url": "",
     "maintainer": "themadclover",
     "processor": "RP2040",
     "bootloader": "rp2040",

@@ -20,7 +20,6 @@
         "cols": ["GP4", "GP5", "GP6", "GP7", "GP8", "GP14", "GP15", "GP26", "GP27", "GP28"],
         "rows": ["GP13", "GP12", "GP10", "GP9"]
     },
-    "url": "",
     "usb": {
         "device_version": "1.0.0",
         "pid": "0x8671",

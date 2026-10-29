@@ -36,7 +36,6 @@
         "serial": {"driver": "usart"}
     },
     "processor": "STM32F072",
-    "url": "",
     "usb": {
         "device_version": "1.0.0",
         "pid": "0x61EB",
